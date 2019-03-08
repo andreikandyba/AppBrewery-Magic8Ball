@@ -18,9 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgI-zr-GOj">
-                                <rect key="frame" x="99" y="625" width="178" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qw3-nn-3b4">
+                                <rect key="frame" x="69" y="172" width="237" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="afq-No-Bbw">
+                                <rect key="frame" x="64" y="286" width="247" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="W32-JR-vID"/>
+                                    <constraint firstAttribute="width" constant="247" id="o6s-OY-QCw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgI-zr-GOj">
+                                <rect key="frame" x="98.666666666666686" y="604" width="178" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Ask or shake">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,19 +41,16 @@
                                     <action selector="pushButtonAsk" destination="BYZ-38-t0r" eventType="touchUpInside" id="lm4-6z-pQX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qw3-nn-3b4">
-                                <rect key="frame" x="67" y="161" width="237" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="afq-No-Bbw">
-                                <rect key="frame" x="47" y="278" width="281" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.66666666666666663" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GgI-zr-GOj" firstAttribute="top" secondItem="afq-No-Bbw" secondAttribute="bottom" constant="78" id="4GW-Ep-lPw"/>
+                            <constraint firstItem="afq-No-Bbw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BVa-PD-ctg"/>
+                            <constraint firstItem="afq-No-Bbw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F9O-9b-eTU"/>
+                            <constraint firstItem="afq-No-Bbw" firstAttribute="top" secondItem="qw3-nn-3b4" secondAttribute="bottom" constant="78" id="S58-xn-LPO"/>
+                            <constraint firstItem="GgI-zr-GOj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t90-XF-D06"/>
+                            <constraint firstItem="qw3-nn-3b4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zHj-AI-Fh6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -50,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+            <point key="canvasLocation" x="135.19999999999999" y="131.52709359605913"/>
         </scene>
     </scenes>
     <resources>
